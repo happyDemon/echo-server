@@ -1,8 +1,5 @@
 # Echo-Server
 
-[![Latest Version on Packagist][https://img.shields.io/packagist/v/happydemon/echo-server.svg?style=flat-square]][https://packagist.org/packages/happydemon/echo-server]
-[![Total Downloads][https://img.shields.io/packagist/dt/happydemon/echo-server.svg?style=flat-square]][https://packagist.org/packages/happydemon/echo-server]
-
 A swoole-based implementation for a laravel echo server
 
 ## Installation
@@ -37,7 +34,6 @@ Don't forget to enable broadcasting (uncomment the `BroadCastServiceProvider` an
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
 
-```
 
 ## Contributing
 

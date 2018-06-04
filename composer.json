@@ -1,0 +1,44 @@
+{
+    "name": "happydemon/echo-server",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxim Kerstens",
+            "email": "maxim.kerstens@gmail.com",
+            "homepage": "https://github.com/happyDemon"
+        }
+    ],
+    "homepage": "https://github.com/happydemon/echo-server",
+    "keywords": ["Laravel", "Echo", "Websockets", "Swoole"],
+    "require": {
+        "illuminate/support": "~5",
+        "swooletw/laravel-swoole": "^2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "HappyDemon\\EchoServer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HappyDemon\\EchoServer\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HappyDemon\\EchoServer\\EchoServerServiceProvider"
+            ],
+            "aliases": {
+                "EchoServer": "HappyDemon\\EchoServer\\Facades\\EchoServer",
+                "EchoServer": "HappyDemon\\EchoServer\\Facades\\EchoChannels",
+                "EchoServer": "HappyDemon\\EchoServer\\Facades\\EchoStorage"
+            }
+        }
+    }
+}

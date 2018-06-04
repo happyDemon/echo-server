@@ -26,7 +26,7 @@ Add a users table under the `swoole_http.tables` config
 ],
 ```
 
-Don't forget to enable broadcasting (uncomment the `BroadCastServiceProvider` and your `app.service_providers` config).
+Don't forget to enable broadcasting (uncomment the `BroadCastServiceProvider` in your `app.service_providers` config).
 
 ## Usage
 

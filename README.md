@@ -1,4 +1,8 @@
-# echo-server
+# Echo-Server
+
+[![Latest Version on Packagist][https://img.shields.io/packagist/v/happydemon/echo-server.svg?style=flat-square]][https://packagist.org/packages/happydemon/echo-server]
+[![Total Downloads][https://img.shields.io/packagist/dt/happydemon/echo-server.svg?style=flat-square]][https://packagist.org/packages/happydemon/echo-server]
+
 A swoole-based implementation for a laravel echo server
 
 ## Installation
@@ -12,6 +16,27 @@ Enable swoole websockets in your `.env`
 ```bash
 SWOOLE_HTTP_WEBSOCKET=true
 ```
+
+Add a users table under the `swoole_http.tables` config
+
+```php
+'echo:users' => [
+    'size' => 2048,
+    'columns' => [
+        ['name' => 'value', 'type' => Table::TYPE_STRING, 'size' => 128],
+        ['name' => 'cookie', 'type' => Table::TYPE_STRING, 'size' => 256],
+    ]
+],
+```
+
+Don't forget to enable broadcasting (uncomment the `BroadCastServiceProvider` and your `app.service_providers` config).
+
+## Usage
+
+## Change log
+
+Please see the [changelog](changelog.md) for more information on what has changed recently.
+
 ```
 
 ## Contributing
@@ -24,8 +49,8 @@ If you discover any security related issues, please email maxim.kerstens@gmail.c
 
 ## Credits
 
-- [Maxim Kerstens][link-author]
-- [All Contributors][link-contributors]
+- [Maxim Kerstens][https://github.com/happyDemon/echo-server/tree/develop]
+- [All Contributors][https://github.com/happyDemon/echo-server/graphs/contributors]
 
 ## License
 

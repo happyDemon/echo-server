@@ -45,8 +45,8 @@ If you discover any security related issues, please email maxim.kerstens@gmail.c
 
 ## Credits
 
-- [Maxim Kerstens][https://github.com/happyDemon/echo-server/tree/develop]
-- [All Contributors][https://github.com/happyDemon/echo-server/graphs/contributors]
+- [Maxim Kerstens](https://github.com/happyDemon)
+- [All Contributors](https://github.com/happyDemon/echo-server/graphs/contributors)
 
 ## License
 
